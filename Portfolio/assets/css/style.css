@@ -459,22 +459,8 @@ body::-webkit-scrollbar-thumb {
 
 
 
-/*-----------------------------------*\
-  #TIMELINE
-\*-----------------------------------*/
 
-.timeline-item {
-  padding-block: 20px;
-  font-size: var(--fs-18);
-  display: grid;
-  gap: 15px;
-}
 
-.timeline-item:not(:last-child) { border-block-end: 1px solid var(--black_10); }
-
-.timeline-item .item-period { font: unset; }
-
-.timeline-item .item-title { color: var(--black); }
 
 
 
@@ -533,19 +519,6 @@ body::-webkit-scrollbar-thumb {
 }
 
 
-
-
-
-/*-----------------------------------*\
-  #NEWS
-\*-----------------------------------*/
-
-.news-card .card-text { margin-block-end: 5px; }
-
-
-
-
-
 /*-----------------------------------*\
   #CONTACT
 \*-----------------------------------*/
@@ -570,8 +543,12 @@ body::-webkit-scrollbar-thumb {
 }
 
 .contact-link {
+  display: flex;
   color: var(--black);
   font-family: var(--ff-poppins);
+}
+ion-icon{
+  margin-right: 1rem;
 }
 
 .input-field {
@@ -678,23 +655,6 @@ textarea.input-field {
   .exp-list .list-item:not(:last-child) { margin-block-end: 0; }
 
 
-
-  /**
-   * PRICING
-   */
-
-  .pricing-card {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 10px;
-  }
-
-  .pricing-card .card-title {
-    margin-block: 0;
-    margin-inline-end: auto;
-  }
-
 }
 
 
@@ -750,12 +710,7 @@ textarea.input-field {
 
 
 
-  /**
-   * PRICING, CONTACT
-   */
-
-  .pricing-card,
-  .contact-link { font-size: var(--fs-18); }
+  
 
 
 
@@ -950,34 +905,6 @@ textarea.input-field {
     overflow: hidden;
   }
 
-
-
-  /**
-   * TIMELINE
-   */
-
-  .timeline-item { padding-block: 30px; }
-
-
-
-  /**
-   * PRICING
-   */
-
-  .pricing .container {
-    position: relative;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: flex-start;
-    gap: 200px;
-  }
-
-  .pricing-content {
-    position: sticky;
-    top: 120px;
-  }
-
-  .pricing .section-text { margin-block-end: 0; }
 
 
 
