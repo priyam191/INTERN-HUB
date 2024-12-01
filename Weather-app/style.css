@@ -1,0 +1,133 @@
+/* General styling */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+  color: #fff;
+  overflow: hidden;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  text-align: center;
+  overflow: hidden;
+  transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card-body {
+  padding: 20px;
+}
+
+/* Search section styling */
+.search {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.search input {
+  width: 70%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px 0 0 5px;
+  font-size: 14px;
+}
+
+.search button {
+  padding: 10px 15px;
+  background-color: #4caf50;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.search button:hover {
+  background-color: #45a049;
+}
+
+.search input:focus {
+  outline: none;
+}
+
+/* City and temperature display */
+h4.city {
+  font-size: 24px;
+  margin: 10px 0;
+}
+
+h6.temp {
+  font-size: 20px;
+  margin: 5px 0;
+  color: #ffeb3b;
+}
+
+/* Info section styling */
+.info {
+  margin-top: 20px;
+}
+
+.info p {
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+.info .humidity {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.info .wind-speed {
+  display: inline-block;
+  color: #03a9f4;
+}
+
+.info .fa-wind {
+  margin-right: 5px;
+}
+
+h5.description{
+    color:#03293b;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .card {
+    width: 90%;
+    height: auto;
+  }
+
+  .search input {
+    width: 60%;
+  }
+
+  .search button {
+    padding: 8px 12px;
+  }
+
+  h4.city {
+    font-size: 20px;
+  }
+
+  h6.temp {
+    font-size: 18px;
+  }
+
+  .info p {
+    font-size: 14px;
+  }
+
+}
